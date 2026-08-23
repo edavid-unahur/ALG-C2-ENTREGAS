@@ -1,0 +1,55 @@
+<mxfile host="65bd71144e">
+    <diagram id="flowchart-ejer19" name="Page-1">
+        <mxGraphModel dx="954" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1200" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="inicio" value="INICIO" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d4e6f1;strokeColor=#3498db;strokeWidth=2;fontStyle=bold;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="20" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="init" value="mayor1, mayor2, mayor3 = minimo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6eaf8;strokeColor=#2e86c1;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="100" width="340" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="leer" value="Leer numero" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#a9dfbf;strokeColor=#27ae60;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="190" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="d1" value="¿numero == 0?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5b7b1;strokeColor=#e74c3c;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="810" y="290" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="update" value="Actualizar top 3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6eaf8;strokeColor=#2e86c1;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="310" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="out" value="Imprimir tres mayores" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad7a0;strokeColor=#e67e22;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="550" width="280" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="fin" value="FIN" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d4e6f1;strokeColor=#3498db;strokeWidth=2;fontStyle=bold;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="640" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="info" value="O(n)" style="text;html=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="100" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="inicio" target="init" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="init" target="leer" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="leer" target="d1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" value="SI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="d1" target="out" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="d1" target="update" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="update" target="leer" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="out" target="fin" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

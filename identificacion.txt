@@ -1,0 +1,13 @@
+================================================
+             IDENTIFICACIÓN DEL ALUMNO
+================================================
+
+Nombre:         Ezequiel David
+Universidad:    Universidad Nacional de Hurlingham (UNAHUR)
+Docente:        Cristian Ciarallo
+
+Materia:        Algoritmos
+Carrera:        Licenciatura en Informática
+Año:            2026
+
+================================================

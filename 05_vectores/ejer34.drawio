@@ -1,0 +1,82 @@
+<mxfile host="65bd71144e">
+    <diagram id="flowchart-ejer34" name="Page-1">
+        <mxGraphModel dx="778" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1200" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="inicio" value="INICIO" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d4e6f1;strokeColor=#3498db;strokeWidth=2;fontStyle=bold;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="30" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="leerGrado" value="Leer grado" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#a9dfbf;strokeColor=#27ae60;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="120" width="200" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="declCoef" value="coef[grado+1]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="225" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="condForCoef" value="i &lt;= grado? (leer coef)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5b7b1;strokeColor=#e74c3c;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="335" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="leerCoef" value="Leer coef[i]" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#a9dfbf;strokeColor=#27ae60;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="353" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="leerX" value="Leer x" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#a9dfbf;strokeColor=#27ae60;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="480" width="200" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="initHorner" value="resultado = coef[grado]&#10;i = grado - 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="590" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="condHorner" value="i &gt;= 0?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5b7b1;strokeColor=#e74c3c;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="715" width="140" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="hornerStep" value="resultado = resultado * x + coef[i]&#10;i--" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="723" width="230" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="printRes" value="Imprimir P(x) = resultado" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#a9dfbf;strokeColor=#27ae60;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="865" width="240" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="fin" value="FIN" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d4e6f1;strokeColor=#3498db;strokeWidth=2;fontStyle=bold;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="990" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="info" value="O(n)" style="text;html=1;align=center;verticalAlign=middle;fillColor=#ffeaa7;rounded=1;strokeColor=#f39c12;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="30" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="inicio" target="leerGrado" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="leerGrado" target="declCoef" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="declCoef" target="condForCoef" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" value="SI" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#27ae60;strokeWidth=2;fontStyle=bold;" parent="1" source="condForCoef" target="leerCoef" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="leerCoef" target="condForCoef" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" value="NO" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#e74c3c;strokeWidth=2;fontStyle=bold;" parent="1" source="condForCoef" target="leerX" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="leerX" target="initHorner" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="initHorner" target="condHorner" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9" value="SI" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#27ae60;strokeWidth=2;fontStyle=bold;" parent="1" source="condHorner" target="hornerStep" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e10" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="hornerStep" target="condHorner" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" value="NO" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#e74c3c;strokeWidth=2;fontStyle=bold;" parent="1" source="condHorner" target="printRes" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e12" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="printRes" target="fin" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

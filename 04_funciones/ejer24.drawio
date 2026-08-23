@@ -1,0 +1,61 @@
+<mxfile host="65bd71144e">
+    <diagram id="flowchart-ejer24" name="Page-1">
+        <mxGraphModel dx="990" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="inicio" value="INICIO" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d4e6f1;strokeColor=#3498db;strokeWidth=2;fontStyle=bold;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="30" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="leer" value="Leer a, b, c" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#a9dfbf;strokeColor=#27ae60;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="120" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="calcDisc" value="disc = b² - 4·a·c" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="230" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="llamar" value="Llamar tieneRaicesReales(a,b,c)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d2b4de;strokeColor=#8e44ad;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="340" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="decision" value="¿disc &gt;= 0?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5b7b1;strokeColor=#e74c3c;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="355" y="460" width="170" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="outS" value="Imprimir&#10;'TIENE raices reales'" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad7a0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="630" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="outN" value="Imprimir&#10;'NO tiene raices reales'" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad7a0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="630" width="210" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="fin" value="FIN" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d4e6f1;strokeColor=#3498db;strokeWidth=2;fontStyle=bold;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="820" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="info" value="O(1)" style="text;html=1;align=center;verticalAlign=middle;fillColor=#ffeaa7;rounded=1;strokeColor=#f39c12;strokeWidth=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="100" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="inicio" target="leer" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="leer" target="calcDisc" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="calcDisc" target="llamar" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="llamar" target="decision" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="SI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#27ae60;strokeWidth=2;fontStyle=bold;" parent="1" source="decision" target="outS" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#e74c3c;strokeWidth=2;fontStyle=bold;" parent="1" source="decision" target="outN" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1" source="outS" target="fin">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1" source="outN" target="fin">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

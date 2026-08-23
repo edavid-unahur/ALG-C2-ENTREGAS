@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-04-29" agent="5.0" version="24.0" type="device">
+  <diagram id="flowchart-ejer07" name="Page-1">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- INICIO -->
+        <mxCell id="inicio" value="INICIO" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d4e6f1;strokeColor=#3498db;strokeWidth=2;fontSize=12;fontStyle=bold;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Leer entrada -->
+        <mxCell id="leer" value="Leer dos numeros" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#a9dfbf;strokeColor=#27ae60;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="200" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Decisión -->
+        <mxCell id="decision" value="¿Cuál mayor?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5b7b1;strokeColor=#e74c3c;strokeWidth=2;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="325" y="200" width="150" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Complejidad -->
+        <mxCell id="info" value="O(1)" style="text;html=1;align=center;verticalAlign=middle;fillColor=#ffeaa7;rounded=1;strokeColor=#f39c12;strokeWidth=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="550" y="100" width="80" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- FIN -->
+        <mxCell id="fin" value="FIN" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d4e6f1;strokeColor=#3498db;strokeWidth=2;fontSize=12;fontStyle=bold;" vertex="1" parent="1">
+          <mxGeometry x="350" y="330" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Edges -->
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1" source="inicio" target="leer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;" edge="1" parent="1" source="leer" target="decision">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;label=SI" edge="1" parent="1" source="decision" target="fin">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="250" as="sourcePoint" />
+            <mxPoint x="400" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="edge3b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;label=NO" edge="1" parent="1" source="decision" target="fin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

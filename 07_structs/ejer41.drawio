@@ -1,0 +1,136 @@
+<mxfile host="65bd71144e">
+    <diagram id="flowchart-ejer41" name="Page-1">
+        <mxGraphModel dx="1540" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="inicio" value="INICIO" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d4e6f1;strokeColor=#3498db;strokeWidth=2;fontStyle=bold;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="30" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="decl" value="struct Persona { nombre, telefono }&#10;vector agenda&#10;opcion = -1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="115" width="300" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="condWhile" value="opcion != 0?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5b7b1;strokeColor=#e74c3c;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="455" y="240" width="170" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="menu" value="Mostrar menu (1..6, 0=Salir)&#10;Leer opcion" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#a9dfbf;strokeColor=#27ae60;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="775" y="250" width="230" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="decOp" value="opcion?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5b7b1;strokeColor=#e74c3c;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="375" width="130" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="op1" value="1: Cargar&#10;agenda.clear()&#10;Leer cant (max 50)&#10;i=0 → i&lt;cant? → leer Persona → push_back → i++" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="530" width="200" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="op2" value="2: Buscar tel. por nombre&#10;Leer nombre&#10;encontrado=false&#10;for p in agenda:&#10;  si p.nombre==nombre → imprimir p.telefono&#10;si !encontrado → 'No encontrado'" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="520" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="op3" value="3: Buscar nombre por tel.&#10;Leer telefono&#10;encontrado=false&#10;for p in agenda:&#10;  si p.telefono==tel → imprimir p.nombre&#10;si !encontrado → 'No encontrado'" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="520" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="op4" value="4: Modificar telefono&#10;Leer nombre&#10;for p in agenda:&#10;  si p.nombre==nombre →&#10;    leer p.telefono nuevo&#10;    imprimir 'Actualizado'&#10;    break" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="520" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="op5" value="5: Agregar contacto&#10;agenda.size() &gt;= 50?&#10;  SI → 'Agenda llena'&#10;  NO → leer Persona&#10;        push_back&#10;        imprimir 'Agregado'" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="520" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="op6" value="6: Dar de baja&#10;Leer nombre&#10;remove_if(agenda, nombre)&#10;si encontrado → erase&#10;imprimir 'Dado de baja'" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="1120" y="520" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="joinOps" value="" style="point;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="765" y="720" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="fin" value="FIN" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d4e6f1;strokeColor=#3498db;strokeWidth=2;fontStyle=bold;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="1580" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="info" value="O(n)" style="text;html=1;align=center;verticalAlign=middle;fillColor=#ffeaa7;rounded=1;strokeColor=#f39c12;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="670" y="30" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="inicio" target="decl" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="decl" target="condWhile" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" value="SI" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#27ae60;strokeWidth=2;fontStyle=bold;" parent="1" source="condWhile" target="menu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="menu" target="decOp" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#7f8c8d;strokeWidth=2;fontStyle=bold;" parent="1" source="decOp" target="op1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" value="2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#7f8c8d;strokeWidth=2;fontStyle=bold;" parent="1" source="decOp" target="op2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" value="3" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#7f8c8d;strokeWidth=2;fontStyle=bold;" parent="1" source="decOp" target="op3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" value="4" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#7f8c8d;strokeWidth=2;fontStyle=bold;" parent="1" source="decOp" target="op4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9" value="5" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#7f8c8d;strokeWidth=2;fontStyle=bold;" parent="1" source="decOp" target="op5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e10" value="6" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#7f8c8d;strokeWidth=2;fontStyle=bold;" parent="1" source="decOp" target="op6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="op1" target="condWhile" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="130" y="277"/>
+                            <mxPoint x="455" y="277"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e12" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="op2" target="condWhile" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="350" y="277"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e13" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="op3" target="condWhile" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="570" y="277"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e14" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="op4" target="condWhile" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="720" y="277"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e15" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="op5" target="condWhile" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1010" y="220"/>
+                            <mxPoint x="540" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e16" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="op6" target="condWhile" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1220" y="200"/>
+                            <mxPoint x="540" y="200"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e17" value="NO (op=0)" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#e74c3c;strokeWidth=2;fontStyle=bold;" parent="1" source="condWhile" target="fin" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="455" y="277"/>
+                            <mxPoint x="380" y="277"/>
+                            <mxPoint x="380" y="1605"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

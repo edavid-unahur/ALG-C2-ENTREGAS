@@ -1,0 +1,165 @@
+<mxfile host="65bd71144e">
+    <diagram id="flowchart-ejer32" name="Page-1">
+        <mxGraphModel dx="778" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1300" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="inicio" value="INICIO" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d4e6f1;strokeColor=#3498db;strokeWidth=2;fontStyle=bold;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="30" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="leerN" value="Leer n" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#a9dfbf;strokeColor=#27ae60;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="120" width="200" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="declOrig" value="original[n]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="225" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="condForLeer" value="i &lt; n? (leer X)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5b7b1;strokeColor=#e74c3c;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="345" y="335" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="leerXi" value="Leer original[i]" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#a9dfbf;strokeColor=#27ae60;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="353" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="declSinRep" value="sinRepetidos = vector vacio&#10;i = 0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="480" width="240" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="condForI" value="i &lt; n?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5b7b1;strokeColor=#e74c3c;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="595" width="140" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="initYaEsta" value="yaEsta = false&#10;j = 0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="735" width="220" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="condForJ" value="j &lt; sinRepetidos.size()?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5b7b1;strokeColor=#e74c3c;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="850" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="decIgual" value="original[i] == sinRepetidos[j]?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5b7b1;strokeColor=#e74c3c;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="670" y="850" width="210" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="setYaEsta" value="yaEsta = true&#10;break" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="695" y="1002.5" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="incJ" value="j++" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="870" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="decYaEsta" value="!yaEsta?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5b7b1;strokeColor=#e74c3c;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="990" width="160" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="pushBack" value="sinRepetidos.push_back(original[i])" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="235" y="1240" width="230" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="incI2" value="i++" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#e67e22;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="1065" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="condForPrint" value="i &lt; sinRepetidos.size()?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5b7b1;strokeColor=#e74c3c;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="1230" y="1118" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="printEl" target="condForPrint">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="printEl" value="Imprimir sinRepetidos[i]" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#a9dfbf;strokeColor=#27ae60;strokeWidth=2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="1225" y="1310" width="210" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="fin" value="FIN" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d4e6f1;strokeColor=#3498db;strokeWidth=2;fontStyle=bold;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="1080" y="1350" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="info" value="O(n^2)" style="text;html=1;align=center;verticalAlign=middle;fillColor=#ffeaa7;rounded=1;strokeColor=#f39c12;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="30" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="inicio" target="leerN" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="leerN" target="declOrig" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="declOrig" target="condForLeer" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" value="SI" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#27ae60;strokeWidth=2;fontStyle=bold;" parent="1" source="condForLeer" target="leerXi" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="leerXi" target="condForLeer" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" value="NO" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#e74c3c;strokeWidth=2;fontStyle=bold;" parent="1" source="condForLeer" target="declSinRep" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="declSinRep" target="condForI" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" value="SI" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#27ae60;strokeWidth=2;fontStyle=bold;" parent="1" source="condForI" target="initYaEsta" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="initYaEsta" target="condForJ" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e10" value="SI" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#27ae60;strokeWidth=2;fontStyle=bold;" parent="1" source="condForJ" target="decIgual" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" value="SI" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#27ae60;strokeWidth=2;fontStyle=bold;" parent="1" source="decIgual" target="setYaEsta" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e12" value="NO" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#e74c3c;strokeWidth=2;fontStyle=bold;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="decIgual" target="incJ" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1000" y="890"/>
+                            <mxPoint x="1000" y="880"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e13" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" target="condForJ" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1080" y="860" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="1080" y="820"/>
+                            <mxPoint x="785" y="820"/>
+                            <mxPoint x="785" y="840"/>
+                            <mxPoint x="485" y="840"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e14" value="NO" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#e74c3c;strokeWidth=2;fontStyle=bold;" parent="1" source="condForJ" target="decYaEsta" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e15" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;dashed=1;" parent="1" source="setYaEsta" target="decYaEsta" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e16" value="SI" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#27ae60;strokeWidth=2;fontStyle=bold;" parent="1" source="decYaEsta" target="pushBack" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e17" value="NO" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#e74c3c;strokeWidth=2;fontStyle=bold;" parent="1" source="decYaEsta" target="incI2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e18" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="pushBack" target="incI2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="180" y="1295"/>
+                            <mxPoint x="180" y="1096"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e19" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="incI2" target="condForI" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e20" value="NO" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#e74c3c;strokeWidth=2;fontStyle=bold;" parent="1" source="condForI" target="condForPrint" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e21" value="SI" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#27ae60;strokeWidth=2;fontStyle=bold;" parent="1" source="condForPrint" target="printEl" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e22" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="printEl" target="condForPrint" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1330" y="1410"/>
+                            <mxPoint x="1600" y="1410"/>
+                            <mxPoint x="1600" y="1160"/>
+                            <mxPoint x="1440" y="1160"/>
+                            <mxPoint x="1440" y="1158"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e23" value="NO" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#e74c3c;strokeWidth=2;fontStyle=bold;" parent="1" source="condForPrint" target="fin" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
